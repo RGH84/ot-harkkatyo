@@ -9,3 +9,5 @@
  [komentorivi.txt](https://github.com/RGH84/ot-harkkatyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 *Tehdään muutos*
+
+**Tehdää paikallinen muutos**
