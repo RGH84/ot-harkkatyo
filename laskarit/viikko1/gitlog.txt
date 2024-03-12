@@ -47,6 +47,8 @@ Date:   Tue Mar 12 13:13:00 2024 +0200
  toinen.txt | 1 -
  1 file changed, 1 deletion(-)
 
+Tehdään etänä muutos
+
 commit ca82b68197db38ab0b2090ade5ff7bb45ef275dc
 Author: RGH84 <jhmkemppainen16@gmail.com>
 Date:   Tue Mar 12 12:42:50 2024 +0200
