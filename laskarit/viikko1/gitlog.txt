@@ -1,0 +1,87 @@
+commit 8120b388b22c599d39f8c8c9e7927a905a7c4039
+Author: RGH84 <jhmkemppainen16@gmail.com>
+Date:   Tue Mar 12 13:35:19 2024 +0200
+
+    Change files
+
+ tiedostoja/file2.txt                 | 0
+ tiedostoja/{file1.txt => file22.txt} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit b09dc064c763f8085c6ab0d34c9f98973b61eb36
+Author: RGH84 <jhmkemppainen16@gmail.com>
+Date:   Tue Mar 12 13:28:28 2024 +0200
+
+    Create tiedostoja
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit faa737ef46e41d949dd74ab0db30ab02603e6390
+Author: RGH84 <jhmkemppainen16@gmail.com>
+Date:   Tue Mar 12 13:19:11 2024 +0200
+
+    Edit eka ja kolmas
+
+ eka.txt    | 4 +++-
+ kolmas.txt | 3 ++-
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+commit 0ab1061a097ce2c5b855b9c6395c94001e4d04a5
+Author: RGH84 <jhmkemppainen16@gmail.com>
+Date:   Tue Mar 12 13:16:15 2024 +0200
+
+    Change name tiedosto.txt to eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit dc06c317086af4d610a5feb298446fe742405512
+Author: RGH84 <jhmkemppainen16@gmail.com>
+Date:   Tue Mar 12 13:13:00 2024 +0200
+
+    rm toinen
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit ca82b68197db38ab0b2090ade5ff7bb45ef275dc
+Author: RGH84 <jhmkemppainen16@gmail.com>
+Date:   Tue Mar 12 12:42:50 2024 +0200
+
+    Create more stuff
+
+ kolmas.txt      | 1 +
+ stuff/stuff.txt | 0
+ toinen.txt      | 1 +
+ 3 files changed, 2 insertions(+)
+
+commit 232c8fcd9aedd701e1eb4e63c865bfd7cc595989
+Author: RGH84 <jhmkemppainen16@gmail.com>
+Date:   Tue Mar 12 12:39:27 2024 +0200
+
+    Create kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ef7ed9eed26ab3623b3094c76589b01d122f752b
+Author: RGH84 <jhmkemppainen16@gmail.com>
+Date:   Tue Mar 12 12:31:34 2024 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 663fe84bfdf51ae7302d8749acee647ab9efd93f
+Author: RGH84 <jhmkemppainen16@gmail.com>
+Date:   Tue Mar 12 12:27:52 2024 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
