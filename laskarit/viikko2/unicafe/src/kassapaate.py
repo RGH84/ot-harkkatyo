@@ -45,3 +45,4 @@ class Kassapaate:
 
     def kassassa_rahaa_euroina(self):
         return self.kassassa_rahaa / 100
+    
