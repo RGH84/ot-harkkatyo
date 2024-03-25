@@ -4,6 +4,8 @@
 
  ~~Luultavammin täällä oppiikkin jotain.~~  
 
+ [vaatimusmaarittely.md](https://github.com/RGH84/ot-harkkatyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
  [laskarit](https://github.com/RGH84/ot-harkkatyo/tree/master/laskarit)
 
  [gitlog.txt](https://github.com/RGH84/ot-harkkatyo/blob/master/laskarit/viikko1/gitlog.txt)
