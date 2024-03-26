@@ -4,6 +4,8 @@
 
  ~~Luultavammin täällä oppiikkin jotain.~~  
 
+ [työaikakirjanpito](https://github.com/RGH84/ot-harkkatyo/blob/master/dokumentaatio/tyoaikakirjanpito)
+
  [vaatimusmaarittely.md](https://github.com/RGH84/ot-harkkatyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
  [laskarit](https://github.com/RGH84/ot-harkkatyo/tree/master/laskarit)
