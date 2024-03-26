@@ -21,7 +21,7 @@ Alkuvaiheessa sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, 
 ### Kirjautumisen jälkeen 
 
 - Käyttäjä tulee etusivulle, jossa on linkit _Huoltotoimenpiteet_ ja _Aikataulutetut huoltotoimenpiteet_ sivuille sekä molempien sivujen tekemättömät huoltotoimenpiteet listattuna 
-- Huoltotoimenpiteet_ sivulla: 
+- _Huoltotoimenpiteet_ sivulla: 
 	- Näet tekemäsi huoltotoimenpiteet 
 	- Pystyt lisäämään tekemättömän huoltotoimenpiteen, joka tulee näkyviin etusivulle 
 
