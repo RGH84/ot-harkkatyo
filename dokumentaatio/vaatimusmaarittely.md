@@ -13,7 +13,8 @@ Alkuvaiheessa sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, 
 ### Ennen kirjautumista 
 
 - Käyttäjä voi luoda sovellukseen käyttäjätunnuksen ja salasanan 
-	- Käyttäjätunnuksen tulee olla ainutlaatuinen ja pituuden on oltava vähintään 3 merkkiä, salasanan pituus on oltava vähintään 4 merkkiä  
+	- Käyttäjätunnuksen tulee olla ainutlaatuinen ja sen pituuden on oltava vähintään 3 merkkiä
+ 	- Salasanan pituuden tulee olla vähintään 4 merkkiä 
 	- Järjestelmä ilmoittaa, jos käyttäjätunnus on jo käytössä, tai pituudet ovat väärin
 - Käyttäjä voi kirjautua sisään luotuaan onnistuneesti käyttäjätunnuksen ja salasanan 
 	- Järjestelmä ilmoittaa, mikäli käyttäjätunnusta ei löydy tai salasana on virheellinen 
@@ -22,14 +23,14 @@ Alkuvaiheessa sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, 
 
 - Käyttäjä tulee etusivulle, jossa on linkit _Huoltotoimenpiteet_ ja _Aikataulutetut huoltotoimenpiteet_ sivuille sekä molempien sivujen tekemättömät huoltotoimenpiteet listattuna 
 - _Huoltotoimenpiteet_ sivulla: 
-	- Näet tekemäsi huoltotoimenpiteet 
+	- Näet tekemäsi huoltotoimenpiteet
+ 	- Pystyt lisäämään tekemäsi huoltotoimenpiteen, joka tulee näkyviin sivulle 
 	- Pystyt lisäämään tekemättömän huoltotoimenpiteen, joka tulee näkyviin etusivulle 
-
 - _Aikataulutetut huoltotoimenpiteet_ sivulla: 
-	- Näet tekemäsi aikataulutetut huoltotoimenpiteet 
+	- Näet tekemäsi aikataulutetut huoltotoimenpiteet
+ 	- Pystyt lisäämään tekemäsi huoltotoimenpiteen, joka tulee näkyviin sivulle  
 	- Pystyt lisäämään tekemättömän aikataulutetun huoltotoimenpiteen, joka tulee näkyviin etusivulle 
 	- Aikataulutetussa huoltotoimenpiteessä tulee merkitä aika, mihin mennessä se pitäisi tehdä 
-
 - Etusivulta voi merkitä huoltotoimenpiteitä tehdyksi, jolloin ne siirtyvät näkyviin omille sivuillensa 
 
 ## Jatkokehitysideoita 
