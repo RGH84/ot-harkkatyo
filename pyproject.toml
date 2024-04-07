@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ot-harkkatyo"
+version = "0.1.0"
+description = ""
+authors = ["RGH84 <jhmkemppainen16@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+invoke = "^2.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+coverage = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
