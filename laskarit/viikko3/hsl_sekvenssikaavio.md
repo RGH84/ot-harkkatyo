@@ -22,8 +22,8 @@
     rautatietori->>-kallen_kortti: kortti.kasvata_arvoa(3)
     main->>+ratikka6: osta_lippu(kallen_kortti, 0)
     ratikka6->>-kallen_kortti: kortti.vahenna_arvoa(1.5)
-    kallen_kortti->>main: True
+    kallen_kortti-->>main: True
     main->>+bussi244: osta_lippu(kallen_kortti, 2)
     bussi244->>-kallen_kortti: kortti.vahenna_arvoa(3.5)
-    kallen_kortti->>main: False  
+    kallen_kortti-->>main: False  
 ```
