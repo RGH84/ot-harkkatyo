@@ -10,3 +10,4 @@
 - Lisätty SQLite tietokannat käyttö/testi, joissa tällä hetkellä ainoastaan käyttäjätiedot
 - Käyttäjä voi tehdä tunnuksen, kirjautua sisään/ulos ja tarkastaa muut käyttäjänimet
 - Testattu pytestillä ohjelman tämän hetkinen toiminta
+- Toiminta testattu Cubbli Linuxissa
