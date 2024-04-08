@@ -1,19 +1,69 @@
-# Tämä on harjoituskansio
+# HouseDiary
 
-**Täällä _opetellaan_** *ohjelmistotekniikkaa*.
+## Sovelluksen tarkoitus
 
- ~~Luultavammin täällä oppiikkin jotain.~~  
+Tämä sovellus on suunniteltu helpottamaan omakotitalojen ylläpitoa tarjoamalla käyttäjille mahdollisuuden luoda ja hallita henkilökohtaista huoltopäiväkirjaa. Sovellus palvelee erityisesti pientaloasujia. Se on kuitenkin käyttökelpoinen kaiken tyyppisten kiinteistöjen ylläpidossa. Jokainen rekisteröitynyt käyttäjä saa käyttöönsä oman huoltopäiväkirjan, mikä tekee kodin huoltotoimenpiteiden seurannasta ja suunnittelusta vaivatonta. 
 
- [työaikakirjanpito](https://github.com/RGH84/ot-harkkatyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+Huom! Sovellus on vielä kehityksen alkutaipaleella. Tällä hetkellä sovelluksessa voi luoda käyttäjän, tarkastella muita käyttäjiä ja ns. kirjautua sisään/ulos. Sovelluksen käyttö tapahtuu tällä hetkellä teksipohjaisesti. 
 
- [vaatimusmäärittely](https://github.com/RGH84/ot-harkkatyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+## Huomio Python-versiosta ja suoritusympäristöstä
 
- [laskarit](https://github.com/RGH84/ot-harkkatyo/tree/master/laskarit)
+Sovelluksen Python-version vähimmäisvaatimus on `3.8`. Sovelluksen toiminta on testattu Ubuntu 22.04.4 LTS ja Cubbli Linux järjestelmillä.
 
- [gitlog.txt](https://github.com/RGH84/ot-harkkatyo/blob/master/laskarit/viikko1/gitlog.txt)
+## Dokumentaatio
 
- [komentorivi.txt](https://github.com/RGH84/ot-harkkatyo/blob/master/laskarit/viikko1/komentorivi.txt)
+- [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+- [Työaikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)
+- [Changelog](./dokumentaatio/changelog.md)
 
-*Tehdään muutos*
+## Asennus
 
-**Tehdää paikallinen muutos**
+1. Asenna tarvittavat riippuvuudet suorittamalla seuraava komento:
+
+```bash
+poetry install
+```
+
+2. Tee tarpeelliset alustavat toimenpiteet käyttämällä komentoa:
+
+```bash
+poetry run invoke build
+```
+
+3. Käynnistä sovellus antamalla komento:
+
+```bash
+poetry run invoke start
+```
+
+## Komentorivitoiminnot
+
+### Ohjelman suorittaminen
+
+Ohjelman voi suorittaa komennolla:
+
+```bash
+poetry run invoke start
+```
+
+### Testaus
+
+Testit voi suorittaa komennolla:
+
+```bash
+poetry run invoke test
+```
+
+### Testikattavuus
+
+Testikattavuusraportin voi luoda komennolla:
+
+```bash
+poetry run invoke coverage-report
+```
+
+Raportti tallentuu _htmlcov_-hakemistoon.
+
+
+
+
