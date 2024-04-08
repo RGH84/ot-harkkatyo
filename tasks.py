@@ -15,3 +15,7 @@ def coverage_report(ctx):
 @task
 def clean_data(ctx):
     ctx.run("python3 src/initialize_database.py", pty=True)
+
+@task
+def build(ctx):
+    ctx.run("python3 src/build.py", pty=True)

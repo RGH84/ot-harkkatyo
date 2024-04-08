@@ -3,7 +3,7 @@ from entities.user import User
 from services.house_diary_service import HouseDiaryService
 from repositories.user_repository import UserRepository
 from database_connection import test_get_database_connection
-from test_initialize_database import initialize_database
+from test_initialize_database import test_initialize_database
 
 class TestHouseDiaryService(unittest.TestCase):
     """Testaa UserRepositoryn myös, nimi muuttunee myöhemmin.."""
@@ -58,4 +58,4 @@ class TestHouseDiaryService(unittest.TestCase):
 
     def tearDown(self):
         """Alustaa testitietokannan jokaisen testin jälkeen"""
-        initialize_database()
+        test_initialize_database()
