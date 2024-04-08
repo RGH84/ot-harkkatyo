@@ -9,5 +9,6 @@
 |  4.4. | 3    | käyttäjän/sisäänkirjautumisen toteutuksen jatkaminen |
 |  5.4. | 5    | käyttäjän/sisäänkirjautumisen muokkaaminen ja testaaminen |
 |  6.4. | 3    | testauksen muutos, testaaminen ja invoke-tehtävät |
-|  7.4. | 3    |  |
+|  7.4. | 3    | toimivuuden tarkastaminen virtuaalityöasemassa|
+|  8.4. |      | pieniä parannuksia ja dokumentaation ajantasalle saattaminen|
 | yht   | 5    | |
