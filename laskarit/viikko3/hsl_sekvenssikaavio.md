@@ -17,7 +17,7 @@
     main->>laitehallinto: lisaa_lukija(bussi244)
     main->>lippu_luukku: Kioski()
     main->>+lippu_luukku: osta_matkakortti("Kalle")
-    lippu_luukku->>-kallen_kortti: Matkakortti(Kalle)
+    lippu_luukku-->>-kallen_kortti: Matkakortti(Kalle)
     main->>+rautatietori: lataa_arvoa(kallen_kortti, 3)
     rautatietori->>-kallen_kortti: kortti.kasvata_arvoa(3)
     main->>+ratikka6: osta_lippu(kallen_kortti, 0)
