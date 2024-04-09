@@ -10,6 +10,10 @@ Huom! Sovellus on vielä kehityksen alkutaipaleella. Tällä hetkellä sovelluks
 
 Sovelluksen Python-version vähimmäisvaatimus on `3.8`. Sovelluksen toiminta on testattu Ubuntu 22.04.4 LTS ja Cubbli Linux järjestelmillä.
 
+## Muita huomioita
+
+Sovelluksen kehityksen alkuvaiheessa sovellukseen on otettu runsaasti vaikutteita kurssin referenssisovelluksesta, ToDoAppista, jotta kehitystyö pääsi jouhevasti käyntiin. Tämän seurauksena sovellus muistuttaa monin osin kyseistä referenssisovellusta tässä vaiheessa. Nyt, kun sovelluksen perustoimintalogiikka alkaa olla selvillä, siiryn vahvemmin kohti oman näköistä koodia. Ohjaajaa antanee palautetta, mikäli hän katsoo, että sovellus muistuttaa liikaa referenssisovellusta tässä vaiheessa.
+
 ## Dokumentaatio
 
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
