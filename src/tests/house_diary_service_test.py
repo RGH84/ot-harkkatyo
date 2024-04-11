@@ -5,6 +5,7 @@ from repositories.user_repository import UserRepository
 from database_connection import test_get_database_connection
 from test_initialize_database import test_initialize_database
 
+
 class TestHouseDiaryService(unittest.TestCase):
     """Testaa UserRepositoryn myös, nimi muuttunee myöhemmin.."""
     @classmethod

@@ -5,10 +5,12 @@ commands = {
     "3": "Kirjaudu sisään",
 }
 
+
 class HouseDiary:
     """Luokka, jonka kautta toimii sovelluksen tekstikäyttöliittymä,
     joka tullaan päivittämään graaffiseksi jossain vaiheessa
     """
+
     def __init__(self, house_diary_service):
         self.services = house_diary_service
 
@@ -34,7 +36,8 @@ class HouseDiary:
         password = input("Salasana: ")
 
         if not self.services.check_length(username, password):
-            print("Tarkista kenttien pituudet, Käyttäjänimi min 3 kirjainta ja salasana min 4.")
+            print(
+                "Tarkista kenttien pituudet, Käyttäjänimi min 3 kirjainta ja salasana min 4.")
 
         elif self.services.create_user(username, password):
             print("Käyttäjä luotu onnistuneesti.")

@@ -1,5 +1,6 @@
 from entities.user import User
 
+
 def get_user_from_user_row(user_row):
 
     if user_row:
@@ -7,6 +8,7 @@ def get_user_from_user_row(user_row):
         password = user_row["password"]
         return User(username, password)
     return None
+
 
 class UserRepository:
     """Tämä luokka vastaa käyttäjiin liittyvistä tietokantaoperaatioista.

@@ -1,31 +1,35 @@
 from database_connection import test_get_database_connection
 
-def drop_tables(connection):
-    cursor = connection.cursor()
 
-    cursor.execute('''
+def drop_tables(test_connection):
+    test_cursor = test_connection.cursor()
+
+    test_cursor.execute('''
         drop table if exists users;
     ''')
 
-    connection.commit()
+    test_connection.commit()
 
-def create_tables(connection):
-    cursor = connection.cursor()
 
-    cursor.execute('''
+def create_tables(test_connection):
+    test_cursor = test_connection.cursor()
+
+    test_cursor.execute('''
         create table users (
             username text primary key,
             password text
         );
     ''')
 
-    connection.commit()
+    test_connection.commit()
+
 
 def test_initialize_database():
-    connection = test_get_database_connection()
+    test_connection = test_get_database_connection()
 
-    drop_tables(connection)
-    create_tables(connection)
+    drop_tables(test_connection)
+    create_tables(test_connection)
+
 
 if __name__ == "__main__":
     test_initialize_database()

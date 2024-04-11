@@ -1,5 +1,6 @@
 from entities.user import User
 
+
 class HouseDiaryService:
     """Tämä luokka vastaa sovelluslogiikasta"""
 
