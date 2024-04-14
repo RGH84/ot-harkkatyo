@@ -11,4 +11,10 @@
 |  6.4. | 3    | testauksen muutos, testaaminen ja invoke-tehtävät |
 |  7.4. | 3    | toimivuuden tarkastaminen virtuaalityöasemassa|
 |  8.4. | 3    | pieniä parannuksia ja dokumentaation ajan tasalle saattaminen|
-| yht   | 24   | |
+| 11.4. | 2    | pylint ja autoformat riippuvuudet ja tehtävien aloitus|
+| 12.4. | 2    | aikatauluttomien tehtävien toteutus|
+| 13.4. | 3    | aikatauluttomien tehtävien toteutus|
+| 14.4. | 3    | aikatauluttomien tehtävien toteutus ja pylint korjaukset|
+| 15.4. |     | pieniä parannuksia ja dokumentaation ajan tasalle saattaminen|
+| 16.4. |     | pieniä parannuksia ja dokumentaation ajan tasalle saattaminen|
+| yht   | 34   | |

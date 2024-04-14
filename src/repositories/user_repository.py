@@ -11,8 +11,7 @@ def get_user_from_user_row(user_row):
 
 
 class UserRepository:
-    """Tämä luokka vastaa käyttäjiin liittyvistä tietokantaoperaatioista.
-    Tätä käytetään itse sovellukseen, molemmat oltava ajantasalla"""
+    """Tämä luokka vastaa käyttäjiin liittyvistä tietokantaoperaatioista."""
 
     def __init__(self, connection):
         self._connection = connection

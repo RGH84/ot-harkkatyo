@@ -21,6 +21,17 @@ def create_tables(connection):
         );
     ''')
 
+    cursor.execute('''
+        CREATE TABLE unscheduled_tasks_table (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            creation_time DATETIME NOT NULL,
+            username TEXT NOT NULL,
+            unscheduled_task_content TEXT NOT NULL,
+            completion_time DATETIME,
+            visible BOOLEAN DEFAULT 1
+        );
+    ''')
+
     connection.commit()
 
 
