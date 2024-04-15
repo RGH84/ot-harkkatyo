@@ -5,7 +5,11 @@ def drop_tables(connection):
     cursor = connection.cursor()
 
     cursor.execute('''
-        drop table if exists users;
+        DROP TABLE IF EXISTS users;
+    ''')
+
+    cursor.execute('''
+        DROP TABLE IF EXISTS unscheduled_tasks_table;
     ''')
 
     connection.commit()
