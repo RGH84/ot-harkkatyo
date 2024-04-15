@@ -16,9 +16,9 @@ Sovellus on vielä kehityksen alkutaipaleella. Tällä hetkellä sovelluksessa v
 
 ## Dokumentaatio
 
-- [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
-- [Työaikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)
-- [Changelog](./dokumentaatio/changelog.md)
+- [Vaatimusmäärittely](./housediary/dokumentaatio/vaatimusmaarittely.md)
+- [Työaikakirjanpito](./housediary/dokumentaatio/tyoaikakirjanpito.md)
+- [Changelog](./housediary/dokumentaatio/changelog.md)
 
 ## Asennus
 
