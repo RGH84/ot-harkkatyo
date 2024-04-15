@@ -11,6 +11,7 @@ commands_login = {
     "2": "Näytä tekemättömät aikatauluttomat tehtävät",
     "3": "Näytä tehdyt aikatauluttomat tehtävät",
     "4": "Merkkaa aikatauluton tehtävä tehdyksi",
+    "5": "Poista aikatauluton tehtävä",
 }
 
 
@@ -60,18 +61,21 @@ class HouseDiary:
         password = input("Salasana: ")
 
         if self.services.login(username, password):
+            print()
             print("Olet kirjautunut sisään.")
-
-            for key, value in commands_login.items():
-                print(f'"{key}": "{value}"')
+            print()
 
             while True:
+                print()
+                for key, value in commands_login.items():
+                    print(f'"{key}": "{value}"')
                 print()
                 print("Tekemättömät aikatauluttomat tehtävät: ")
                 print()
                 self._show_undone_unscheduled_tasks()
                 print()
                 command = input("Komento:")
+                print()
 
                 if command == "x":
                     self._logout()
@@ -84,6 +88,8 @@ class HouseDiary:
                     self._show_done_unscheduled_tasks()
                 elif command == "4":
                     self._mark_u_undone_task_done()
+                elif command == "5":
+                    self._delete_u_task()
         else:
             print("Tarkista käyttäjätunnus ja salasana.")
 
@@ -124,3 +130,11 @@ class HouseDiary:
             print("Tehtävän merkitseminen tehdyksi epäonnistui.")
         else:
             print("Tehtävä merkitty tehdyksi onnistuneesti.")
+
+    def _delete_u_task(self):
+        task_id = input("Poista tehtävä ID: ")
+        success = self.services.delete_u_task(task_id)
+        if not success:
+            print("Tehtävän poistaminen epäonnistui.")
+        else:
+            print("Tehtävä poistettiin onnistuneesti.")

@@ -50,13 +50,8 @@ class UnscheduledTasksRepository:
 
     def mark_u_undone_task_done(self, task_id, username):
         cursor = self._connection_unscheduled.cursor()
-        cursor.execute(
-            "SELECT id FROM unscheduled_tasks_table WHERE id = ? AND username = ?",
-            (task_id, username)
-        )
-        result = cursor.fetchone()
-
-        if result is None:
+        correct_id = self.check_u_task_id(cursor, task_id, username)
+        if not correct_id:
             return False
 
         cursor.execute(
@@ -65,4 +60,32 @@ class UnscheduledTasksRepository:
         )
         self._connection_unscheduled.commit()
 
+        return True
+
+    def delete_unscheduled_task(self, task_id, username):
+        cursor = self._connection_unscheduled.cursor()
+        correct_id = self.check_u_task_id(cursor, task_id, username)
+        if not correct_id:
+            return False
+
+        cursor.execute(
+            """
+            DELETE FROM unscheduled_tasks_table
+            WHERE id = ? AND username = ?
+            """,
+            (task_id, username)
+        )
+        self._connection_unscheduled.commit()
+
+        return True
+
+    def check_u_task_id(self, cursor, task_id, username):
+        cursor.execute(
+            "SELECT id FROM unscheduled_tasks_table WHERE id = ? AND username = ?",
+            (task_id, username)
+        )
+        result = cursor.fetchone()
+
+        if result is None:
+            return False
         return True

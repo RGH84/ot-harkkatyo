@@ -75,6 +75,13 @@ class HouseDiaryService:
             return True
         return False
 
+    def delete_u_task(self, task_id):
+        delete = self._unscheduled_task_repository.delete_unscheduled_task(
+            task_id, self._user.username)
+        if delete:
+            return True
+        return False
+
     def get_time(self):
         helsinki_timezone = pytz.timezone('Europe/Helsinki')
         current_time_in_helsinki = datetime.now(
