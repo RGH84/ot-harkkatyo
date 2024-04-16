@@ -10,9 +10,7 @@ Sovelluksen Python-version vähimmäisvaatimus on `3.8`. Sovelluksen toiminta on
 
 ## Muita huomioita
 
-Sovelluksen kehityksen alkuvaiheessa sovellukseen on otettu runsaasti vaikutteita kurssin referenssisovelluksesta, ToDoAppista, jotta kehitystyö pääsi jouhevasti käyntiin. Tämän seurauksena sovellus muistuttaa monin osin kyseistä referenssisovellusta tässä vaiheessa. Nyt, kun sovelluksen perustoimintalogiikka alkaa olla selvillä, siiryn vahvemmin kohti oman näköistä koodia. Ohjaajaa antanee palautetta, mikäli hän katsoo, että sovellus muistuttaa liikaa referenssisovellusta tässä vaiheessa.
-
-Sovellus on vielä kehityksen alkutaipaleella. Tällä hetkellä sovelluksessa voi luoda käyttäjän, tarkastella muita käyttäjiä ja ns. kirjautua sisään/ulos. Sovelluksen käyttö tapahtuu tällä hetkellä teksipohjaisesti. 
+Sovellus on vielä kehitysvaiheessa. Tällä hetkellä sovelluksessa voi luoda käyttäjän, tarkastella muita käyttäjiä ja ns. kirjautua sisään/ulos. Lisäksi sovelluksella voi luoda aikatauluttomia tehtäviä,katsella omia tehtyjä/tekemättömiä aikatauluttomia tehtäviä, merkitä valmiiksi ja poistaa niitä. Sovelluksen käyttö tapahtuu tällä hetkellä teksipohjaisesti. 
 
 ## Dokumentaatio
 
@@ -44,6 +42,11 @@ poetry run invoke start
 
 ### Ohjelman suorittaminen
 
+Kloonattuasi tämän projektin, mene hakemistoon housediary komennolla:
+```bash
+cd housediary
+```
+
 Ohjelman voi suorittaa komennolla:
 
 ```bash
@@ -67,6 +70,16 @@ poetry run invoke coverage-report
 ```
 
 Raportti tallentuu _htmlcov_-hakemistoon.
+
+### Koodin laatu
+
+Pylint testit voi ajaa komennolla:
+
+```bash
+poetry run invoke lint
+```
+
+
 
 
 
