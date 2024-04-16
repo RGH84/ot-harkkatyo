@@ -1,9 +1,12 @@
 import unittest
 from entities.user import User
+from entities.task_manager import UnscheduledTask
 from services.house_diary_service import HouseDiaryService
 from repositories.user_repository import UserRepository
+from repositories.tasks_repository import UnscheduledTasksRepository
 from database_connection import test_get_database_connection
 from test_initialize_database import test_initialize_database
+# u on lyhenne unscheduled ja s scheduled.
 
 
 class TestHouseDiaryService(unittest.TestCase):
@@ -13,11 +16,15 @@ class TestHouseDiaryService(unittest.TestCase):
         """Vaihdaa tietokantayhteuden testitietokantaan"""
         cls.connection = test_get_database_connection()
         cls.user_repository = UserRepository(cls.connection)
-        cls.service = HouseDiaryService(cls.user_repository)
+        cls.tasks_repository = UnscheduledTasksRepository(cls.connection)
+        cls.service = HouseDiaryService(
+            cls.user_repository, cls.tasks_repository)
 
     def setUp(self):
-
+        self.time = self.service.get_time()
         self.user_repository.create_new_user(User("Juho", "1919"))
+        self.tasks_repository.create_new_u_task(
+            UnscheduledTask(self.time, "Juho", "Korjaa katto"))
 
     def test_get_users(self):
         self.user_repository.create_new_user(User("Hanna", "2020"))
@@ -56,6 +63,58 @@ class TestHouseDiaryService(unittest.TestCase):
         self.service.logout()
 
         self.assertIsNone(self.service.get_current_user())
+
+    def test_create_u_task(self):
+        self.service.login("Juho", "1919")
+        task_content = "Malaa seinät"
+        created_task = self.service.create_u_task(task_content)
+
+        self.assertEqual(created_task.u_task_content, task_content)
+        self.assertEqual(created_task.u_visible, 1)
+
+    def test_get_u_undone_tasks(self):
+        self.service.login("Juho", "1919")
+        task_content = "Malaa seinät"
+        self.service.create_u_task(task_content)
+        result = self.service.get_u_undone_tasks()
+
+        self.assertEqual(len(result), 2)  # Laskee myös setupin
+
+    def test_mark_u_undone_done_valid_id(self):
+        self.service.login("Juho", "1919")
+        task_content = "Malaa seinät"
+        self.service.create_u_task(task_content)
+        self.service.mark_u_undone_done(2)
+        result = self.service.get_u_done_tasks()
+
+        self.assertEqual(len(result), 1)
+
+    def test_mark_u_undone_done_invalid_id(self):
+        self.service.login("Juho", "1919")
+        task_content = "Malaa seinät"
+        self.service.create_u_task(task_content)
+        self.service.mark_u_undone_done(3)
+        result = self.service.get_u_done_tasks()
+
+        self.assertEqual(len(result), 0)
+
+    def test_delete_unscheduled_valid_id(self):
+        self.service.login("Juho", "1919")
+        task_content = "Malaa seinät"
+        self.service.create_u_task(task_content)
+        self.service.delete_u_task(1)
+        result = self.service.get_u_undone_tasks()
+
+        self.assertEqual(len(result), 1)
+
+    def test_delete_unscheduled_invalid_id(self):
+        self.service.login("Juho", "1919")
+        task_content = "Malaa seinät"
+        self.service.create_u_task(task_content)
+        self.service.delete_u_task(5)
+        result = self.service.get_u_undone_tasks()
+
+        self.assertEqual(len(result), 2)
 
     def tearDown(self):
         """Alustaa testitietokannan jokaisen testin jälkeen"""

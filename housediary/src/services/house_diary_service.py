@@ -37,6 +37,9 @@ class HouseDiaryService:
 
         return user
 
+    def get_current_user(self):
+        return self._user
+
     def logout(self):
 
         self._user = None

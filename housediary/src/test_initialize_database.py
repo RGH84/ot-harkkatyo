@@ -5,7 +5,11 @@ def drop_tables(test_connection):
     test_cursor = test_connection.cursor()
 
     test_cursor.execute('''
-        drop table if exists users;
+        DROP TABLE IF EXISTS users;
+    ''')
+
+    test_cursor.execute('''
+        DROP TABLE IF EXISTS unscheduled_tasks_table;
     ''')
 
     test_connection.commit()
@@ -15,9 +19,20 @@ def create_tables(test_connection):
     test_cursor = test_connection.cursor()
 
     test_cursor.execute('''
-        create table users (
+        CREATE TABLE users (
             username text primary key,
             password text
+        );
+    ''')
+
+    test_cursor.execute('''
+        CREATE TABLE unscheduled_tasks_table (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            creation_time DATETIME NOT NULL,
+            username TEXT NOT NULL,
+            unscheduled_task_content TEXT NOT NULL,
+            completion_time DATETIME,
+            visible BOOLEAN DEFAULT 1
         );
     ''')
 
