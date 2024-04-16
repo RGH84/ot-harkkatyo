@@ -17,7 +17,7 @@ Sovellus on vielä kehitysvaiheessa. Tällä hetkellä sovelluksessa voi luoda k
 - [Vaatimusmäärittely](./housediary/dokumentaatio/vaatimusmaarittely.md)
 - [Työaikakirjanpito](./housediary/dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./housediary/dokumentaatio/changelog.md)
-- [Arkkitehtuuri](./housediary/dokumentaatio/arkkitehtuuri.md)
+- [Arkkitehtuurikuvaus](./housediary/dokumentaatio/arkkitehtuuri.md)
 
 ## Asennus
 
