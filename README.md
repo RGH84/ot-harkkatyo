@@ -21,19 +21,25 @@ Sovellus on vielä kehitysvaiheessa. Tällä hetkellä sovelluksessa voi luoda k
 
 ## Asennus
 
-1. Asenna tarvittavat riippuvuudet suorittamalla seuraava komento:
+1. Kloonattuasi tämän projektin, mene hakemistoon housediary komennolla:
+   
+```bash
+cd housediary
+```
+
+2. Asenna tarvittavat riippuvuudet suorittamalla seuraava komento:
 
 ```bash
 poetry install
 ```
 
-2. Tee tarpeelliset alustavat toimenpiteet käyttämällä komentoa:
+3. Tee tarpeelliset alustavat toimenpiteet käyttämällä komentoa:
 
 ```bash
 poetry run invoke build
 ```
 
-3. Käynnistä sovellus antamalla komento:
+4. Käynnistä sovellus antamalla komento:
 
 ```bash
 poetry run invoke start
@@ -42,11 +48,6 @@ poetry run invoke start
 ## Komentorivitoiminnot
 
 ### Ohjelman suorittaminen
-
-Kloonattuasi tämän projektin, mene hakemistoon housediary komennolla:
-```bash
-cd housediary
-```
 
 Ohjelman voi suorittaa komennolla:
 
