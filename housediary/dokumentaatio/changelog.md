@@ -11,3 +11,11 @@
 - Käyttäjä voi tehdä tunnuksen, kirjautua sisään/ulos ja tarkastaa muut käyttäjänimet
 - Testattu pytestillä ohjelman tämän hetkinen toiminta
 - Toiminta testattu Cubbli Linuxissa
+
+## Viikko 4
+
+- Lisätty UnscheduledTask-luokka, joka vastaa aikatauluttomista tehtävistä
+- Lisätty UnscheduledTaskRepository-luokka, joka vastaa aikatauluttomien tehtävien tallentamisesta tietokantaan
+- Lisätty uusia toimintoja, aikatauluttomien tehtävien luonti, merkitseminen tehtyiksi ja tehtävien poistaminen
+- Luotu uusille toiminnoille testit ja testattu toiminta
+- Lisätty riippuvuuksiksi pylint ja autopep8, koodin laatua on paranneltu 
