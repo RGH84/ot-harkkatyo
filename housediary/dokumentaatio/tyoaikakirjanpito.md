@@ -15,6 +15,6 @@
 | 12.4. | 2    | aikatauluttomien tehtävien toteutus|
 | 13.4. | 3    | aikatauluttomien tehtävien toteutus|
 | 14.4. | 3    | aikatauluttomien tehtävien toteutus ja pylint korjaukset|
-| 15.4. |     | pieniä parannuksia ja dokumentaation ajan tasalle saattaminen|
-| 16.4. |     | pieniä parannuksia ja dokumentaation ajan tasalle saattaminen|
-| yht   | 34   | |
+| 15.4. | 4    | uusien ominaisuuksien testien kehittäminen ja testaus|
+| 16.4. | 4    | pieniä parannuksia ja dokumentaation ajan tasalle saattaminen|
+| yht   | 42   | |
