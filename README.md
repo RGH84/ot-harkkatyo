@@ -79,6 +79,13 @@ Pylint testit voi ajaa komennolla:
 poetry run invoke lint
 ```
 
+Automaattisen formatoinnin voi ajaa komennolla:
+
+```bash
+poetry run invoke autoformat
+```
+
+
 
 
 
