@@ -1,47 +1,9 @@
 from database_connection import get_database_connection
-
-
-def drop_tables(connection):
-    cursor = connection.cursor()
-
-    cursor.execute('''
-        DROP TABLE IF EXISTS users;
-    ''')
-
-    cursor.execute('''
-        DROP TABLE IF EXISTS unscheduled_tasks_table;
-    ''')
-
-    connection.commit()
-
-
-def create_tables(connection):
-    cursor = connection.cursor()
-
-    cursor.execute('''
-        CREATE TABLE users (
-            username text primary key,
-            password text
-        );
-    ''')
-
-    cursor.execute('''
-        CREATE TABLE unscheduled_tasks_table (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            creation_time DATETIME NOT NULL,
-            username TEXT NOT NULL,
-            unscheduled_task_content TEXT NOT NULL,
-            completion_time DATETIME,
-            visible BOOLEAN DEFAULT 1
-        );
-    ''')
-
-    connection.commit()
+from database_operations import drop_tables, create_tables
 
 
 def initialize_database():
     connection = get_database_connection()
-
     drop_tables(connection)
     create_tables(connection)
 
