@@ -3,6 +3,7 @@
 ## Sovelluslogiikka
 
 Pakkausrakenne ja luokat:
+
 ![Pakkausrakenne ja luokat](./kuvat/pakkauskaaviotoka.png)
 
 ## Päätoiminnalisuudet
