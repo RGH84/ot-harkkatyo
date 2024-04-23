@@ -18,7 +18,7 @@
 | 15.4. | 4    | uusien ominaisuuksien testien kehittäminen ja testaus|
 | 16.4. | 4    | pieniä parannuksia ja dokumentaation ajan tasalle saattaminen|
 | 19.4. | 2    | aikataulutettujen tehtävien toteutus|
-| 20.4. | 2    | aikatauluttomien tehtävien toteutus|
+| 20.4. | 3    | aikatauluttomien tehtävien toteutus|
 | 21.4. | 3    | Cubbli testaus ja kaavioiden päivitys|
-| 22.4. |     | |
-| yht   | x  | |
+| 22.4. | 3    | GitHub release ja dokumentaation ajan tasalle saattaminen|
+| yht   | 53   | |
