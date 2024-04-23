@@ -23,7 +23,7 @@ Alkuvaiheessa sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, 
 
 ***"HUOM! Kaikki tehty merkinnällä olevat toimivat tekstipohjaisesti jotenkin, seuraavaksi tarkoitus toteuttaa graafinen käyttöliittymä"***
 
-- Käyttäjä tulee etusivulle, jossa on linkit _Huoltotoimenpiteet_ ja _Aikataulutetut huoltotoimenpiteet_ sivuille sekä molempien sivujen tekemättömät huoltotoimenpiteet listattuna ***"tehty tekstipohjaisesti"***
+- Käyttäjä tulee etusivulle, jossa on linkit _Huoltotoimenpiteet_ ja _Aikataulutetut huoltotoimenpiteet_ sivuille sekä molempien sivujen tekemättömät huoltotoimenpiteet listattuna ***"tehty"***
 - _Huoltotoimenpiteet_ sivulla: 
 	- Näet tekemäsi huoltotoimenpiteet ***"tehty"***
  	- Pystyt lisäämään tekemäsi huoltotoimenpiteen, joka tulee näkyviin sivulle ***"tehty"***
