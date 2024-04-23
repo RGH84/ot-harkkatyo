@@ -18,4 +18,14 @@
 - Lisätty UnscheduledTaskRepository-luokka, joka vastaa aikatauluttomien tehtävien tallentamisesta tietokantaan
 - Lisätty uusia toimintoja, aikatauluttomien tehtävien luonti, merkitseminen tehtyiksi ja tehtävien poistaminen
 - Luotu uusille toiminnoille testit ja testattu toiminta
-- Lisätty riippuvuuksiksi pylint ja autopep8, koodin laatua on paranneltu 
+- Lisätty riippuvuuksiksi pylint ja autopep8, koodin laatua on paranneltu
+
+## Viikko 5
+
+- Lisätty ScheduledTask-luokka, joka vastaa aikataulutetuista tehtävistä
+- Lisätty ScheduledTaskRepository-luokka, joka vastaa aikataulutettujen tehtävien tallentamisesta tietokantaan
+- Lisätty uusia toimintoja, aikataulutettujen tehtävien luonti, merkitseminen tehtyiksi ja tehtävien poistaminen
+- Luotu uusille toiminnoille testit ja testattu toiminta
+
+
+
