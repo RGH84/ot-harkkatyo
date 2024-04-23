@@ -21,21 +21,23 @@ Alkuvaiheessa sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, 
 
 ### Kirjautumisen jälkeen 
 
-- Käyttäjä tulee etusivulle, jossa on linkit _Huoltotoimenpiteet_ ja _Aikataulutetut huoltotoimenpiteet_ sivuille sekä molempien sivujen tekemättömät huoltotoimenpiteet listattuna ***"Aikatauluttomattomien osalta tehty"***
+***"HUOM! Kaikki tehty merkinnällä olevat toimivat tekstipohjaisesti jotenkin, seuraavaksi tarkoitus toteuttaa graafinen käyttöliittymä"***
+
+- Käyttäjä tulee etusivulle, jossa on linkit _Huoltotoimenpiteet_ ja _Aikataulutetut huoltotoimenpiteet_ sivuille sekä molempien sivujen tekemättömät huoltotoimenpiteet listattuna ***"tehty tekstipohjaisesti"***
 - _Huoltotoimenpiteet_ sivulla: 
 	- Näet tekemäsi huoltotoimenpiteet ***"tehty"***
- 	- Pystyt lisäämään tekemäsi huoltotoimenpiteen, joka tulee näkyviin sivulle ***"tehty, jos merkkaa tehdyksi"***
+ 	- Pystyt lisäämään tekemäsi huoltotoimenpiteen, joka tulee näkyviin sivulle ***"tehty"***
 	- Pystyt lisäämään tekemättömän huoltotoimenpiteen, joka tulee näkyviin etusivulle ***"tehty"***
 - _Aikataulutetut huoltotoimenpiteet_ sivulla: 
-	- Näet tekemäsi aikataulutetut huoltotoimenpiteet
- 	- Pystyt lisäämään tekemäsi huoltotoimenpiteen, joka tulee näkyviin sivulle  
-	- Pystyt lisäämään tekemättömän aikataulutetun huoltotoimenpiteen, joka tulee näkyviin etusivulle 
-	- Aikataulutetussa huoltotoimenpiteessä tulee merkitä aika, mihin mennessä se pitäisi tehdä 
-- Etusivulta voi merkitä huoltotoimenpiteitä tehdyksi, jolloin ne siirtyvät näkyviin omille sivuillensa ***"tehty aikatauluttomien osalta"***
+	- Näet tekemäsi aikataulutetut huoltotoimenpiteet ***"tehty"***
+ 	- Pystyt lisäämään tekemäsi huoltotoimenpiteen, joka tulee näkyviin sivulle  ***"tehty"***
+	- Pystyt lisäämään tekemättömän aikataulutetun huoltotoimenpiteen, joka tulee näkyviin etusivulle ***"tehty"***
+	- Aikataulutetussa huoltotoimenpiteessä tulee merkitä aika, mihin mennessä se pitäisi tehdä ***"tehty"***
+- Etusivulta voi merkitä huoltotoimenpiteitä tehdyksi, jolloin ne siirtyvät näkyviin omille sivuillensa ***"tehty"***
 
 ## Jatkokehitysideoita 
 
-- Huoltotoimenpiteiden muokkaaminen ja poistaminen ***"poistaminen toteutettu jo aikatauluttomien osalta"***
+- Huoltotoimenpiteiden muokkaaminen ja poistaminen ***"poistaminen toteutettu"***
 - Aikataulutettujen huoltotoimenpiteiden automatisointi, sovellus osaa ehdottaa uutta aikaa seuraavalle huollolle, merkittäessä aikataulutettua huoltotoimenpidettä valmiiksi
 - Toimenpiteet voi jakaa omiin ryhmiin, esim. IV- kone, ilmalämpöpumput, ulkotyöt, nuohous ym.
 - Muutakin toiminnalisuutta voi tulla, jos aikaa jää
