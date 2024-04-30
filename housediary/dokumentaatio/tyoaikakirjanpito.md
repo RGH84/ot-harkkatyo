@@ -25,7 +25,7 @@
 | 25.4. | 2    | graafisen käyttöliittymän toteutus|
 | 26.4. | 2    | graafisen käyttöliittymän toteutus|
 | 27.4. | 5    | graafisen käyttöliittymän toteutus|
-| 28.4. | 2    | graafisen käyttöliittymän toteutus|
+| 28.4. | 4    | graafisen käyttöliittymän toteutus|
 | 29.4. | 5    | pieniä korjauksia ja docstringit|
-| 30.4. |     | GitHub release ja dokumentaation ajan tasalle saattaminen|
-| yht   | x   | |
+| 30.4. | 5    | dokumentaation ajan tasalle saattaminen|
+| yht   | 78   | |
