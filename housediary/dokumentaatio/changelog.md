@@ -27,5 +27,12 @@
 - Lisätty uusia toimintoja, aikataulutettujen tehtävien luonti, merkitseminen tehtyiksi ja tehtävien poistaminen
 - Luotu uusille toiminnoille testit ja testattu toiminta
 
+## Viikko 6
+
+- Lisätty UI-luokka, joka vastaa graafisesta käyttöliittymästä sekä sen näkymäluokat
+- Poistettu tekstipohjainen käyttöliittymä
+- Lisätty docstringejä
+- Korjattu tehtävien "tehty" ajan ilmaiseminen
+
 
 
