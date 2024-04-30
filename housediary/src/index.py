@@ -1,4 +1,5 @@
-from ui.diary_first_ui import HouseDiary
+from tkinter import Tk
+from ui.ui import UI
 from repositories.user_repository import UserRepository
 from repositories.tasks_repository import UnscheduledTasksRepository, ScheduledTasksRepository
 from services.house_diary_service import HouseDiaryService
@@ -20,8 +21,13 @@ def main():
     house_diary_service = HouseDiaryService(
         user_repository, unscheduled_tasks_repository, scheduled_task_repository)
 
-    house_diary_app = HouseDiary(house_diary_service)
-    house_diary_app.start()
+    window = Tk()
+    window.title("House Diary")
+
+    ui_view = UI(window, house_diary_service)
+    ui_view.launch()
+
+    window.mainloop()
 
 
 if __name__ == "__main__":

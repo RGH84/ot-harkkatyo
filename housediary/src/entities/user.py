@@ -1,5 +1,6 @@
 class User:
     """class that describes an individual user.
+
     Attributes:
         username: string value that describes the user's username.
         password: string value that describes the user's password.
