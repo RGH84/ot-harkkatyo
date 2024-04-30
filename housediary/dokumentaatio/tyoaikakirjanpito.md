@@ -21,4 +21,11 @@
 | 20.4. | 3    | aikatauluttomien tehtävien toteutus|
 | 21.4. | 3    | Cubbli testaus ja kaavioiden päivitys|
 | 22.4. | 3    | GitHub release ja dokumentaation ajan tasalle saattaminen|
-| yht   | 53   | |
+| 24.4. | 2    | graafisen käyttöliittymän toteutus|
+| 25.4. | 2    | graafisen käyttöliittymän toteutus|
+| 26.4. | 2    | graafisen käyttöliittymän toteutus|
+| 27.4. | 5    | graafisen käyttöliittymän toteutus|
+| 28.4. | 2    | graafisen käyttöliittymän toteutus|
+| 29.4. | 5    | pieniä korjauksia ja docstringit|
+| 30.4. |     | GitHub release ja dokumentaation ajan tasalle saattaminen|
+| yht   | x   | |
