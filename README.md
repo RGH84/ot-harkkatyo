@@ -10,11 +10,9 @@ Sovelluksen Python-version vähimmäisvaatimus on `3.8`. Sovelluksen toiminta on
 
 ## Muita huomioita
 
-Sovellus on vielä kehitysvaiheessa. Tällä hetkellä sovelluksessa voi luoda käyttäjän, tarkastella muita käyttäjiä ja kirjautua sisään/ulos. Lisäksi sovelluksella voi luoda aikatauluttomia/aikataulutettuja tehtäviä, katsella omia tehtyjä/tekemättömiä tehtäviä, merkitä valmiiksi ja poistaa niitä. Sovelluksen käyttö tapahtuu tällä hetkellä teksipohjaisesti. 
+Sovellus on vielä kehitysvaiheessa. Tällä hetkellä sovelluksessa voi luoda käyttäjän, tarkastella muita käyttäjiä ja kirjautua sisään/ulos. Lisäksi sovelluksella voi luoda aikatauluttomia/aikataulutettuja tehtäviä, katsella omia tehtyjä/tekemättömiä tehtäviä, merkitä valmiiksi ja poistaa niitä.
 
-Tällä hetkellä käyttäjän antaessa virheellisen syötteen voi ohjelma kaatua niihin.
-
-Ensi viikolla on aloitan graafisen käyttöliittymän toteutuksen, jonka jälkeen parannellaan muita ominaisuuksia.
+Sovellukseen on juuri luotu ensimmäinen versio graafisesta käyttöliittymästä. Käyttöliittymää ja ominaisuuksia parannellaan vielä viimeisellä viikolla.
 
 ## Dokumentaatio
 
