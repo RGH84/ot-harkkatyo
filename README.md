@@ -20,6 +20,7 @@ Sovellukseen on juuri luotu ensimmäinen versio graafisesta käyttöliittymäst�
 - [Työaikakirjanpito](./housediary/dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./housediary/dokumentaatio/changelog.md)
 - [Arkkitehtuurikuvaus](./housediary/dokumentaatio/arkkitehtuuri.md)
+- [Käyttöohje](./housediary/dokumentaatio/kayttoohje.md)
 
 ## Asennus
 
