@@ -4,7 +4,7 @@
 
 Ohjelman arkkitehtuuri on suunniteltu noudattamaan kolmitasoista kerrosarkkitehtuuria, ja sen koodi on jaettu seuraaviin osiin:
 
-![Pakkausrakenne](./kuvat/pakkausrakenne.png)
+![Pakkausrakenne](./kuvat/pakkausrakenne_fix.png)
 
 - ui: Tämä pakkaus sisältää kaikki käyttöliittymään liittyvät komponentit ja näkymät.
 - services: Tässä paketissa on sovelluksen keskeinen logiikka, kuten käyttäjien hallinta ja tehtävien käsittely.
