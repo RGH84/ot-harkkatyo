@@ -21,7 +21,7 @@ Alkuvaiheessa sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, 
 
 ### Kirjautumisen jälkeen 
 
-***"HUOM! Kaikki tehty merkinnällä olevat toimivat tekstipohjaisesti jotenkin, seuraavaksi tarkoitus toteuttaa graafinen käyttöliittymä"***
+***"HUOM! Nyt kaikki ominaisuudet toimivat graafisella käyttöliittymällä, seuraavaksi parannetaan käyttökokemusta ja lisätän ominaisuuksia, jos aikaa jää. Ominaisuudet eroaa hivenen tästä vaatimusmäärittelystä, esim. uudet huoltotoimenpiteet luodaan ja merkataan tehdyksi ns. etusivulla ja poistaminen tapahtuu valmiiden kautta."***
 
 - Käyttäjä tulee etusivulle, jossa on linkit _Huoltotoimenpiteet_ ja _Aikataulutetut huoltotoimenpiteet_ sivuille sekä molempien sivujen tekemättömät huoltotoimenpiteet listattuna ***"tehty"***
 - _Huoltotoimenpiteet_ sivulla: 
