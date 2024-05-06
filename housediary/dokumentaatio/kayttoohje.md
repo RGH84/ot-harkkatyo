@@ -2,6 +2,15 @@
 
 Voit ladata projektin uusimman version lähdekoodin suoraan GitHubista. Siirry projektin [releases](https://github.com/RGH84/ot-harkkatyo/releases/tag/viikko6)-sivulle ja valitse Assets-kohdasta Source code ladataksesi tiedostot.
 
+## Konfigurointi
+
+Voit määrittää tallennettavien tiedostojen nimet haluamallasi tavalla käyttämällä .env-tiedostoa käynnistyshakemistossa. Jos tiedostoja ei vielä ole data-hakemistossa, ne luodaan automaattisesti sinne. Tiedostojen muoto on seuraava:
+
+```
+DATABASE_FILENAME=database.sqlite
+TEST_DATABASE_FILENAME=test_database.sqlite
+```
+
 ## Ohjelman asennus ja käynnistäminen
 
 1. Kloonattuasi tämän projektin, mene hakemistoon housediary komennolla:
