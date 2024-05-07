@@ -6,7 +6,6 @@ from repositories.user_repository import UserRepository
 from repositories.tasks_repository import UnscheduledTasksRepository, ScheduledTasksRepository
 from database_connection import test_get_database_connection, get_database_connection
 from test_initialize_database import test_initialize_database
-# u on lyhenne unscheduled ja s scheduled.
 
 
 class TestHouseDiaryService(unittest.TestCase):
@@ -84,7 +83,7 @@ class TestHouseDiaryService(unittest.TestCase):
         self.service.create_u_task(task_content)
         result = self.service.get_u_undone_tasks()
 
-        self.assertEqual(len(result), 2)  # Laskee myös setupin
+        self.assertEqual(len(result), 2)
 
     def test_mark_u_undone_done_valid_id(self):
         self.service.login("Juho", "1919")
@@ -138,7 +137,7 @@ class TestHouseDiaryService(unittest.TestCase):
         self.service.create_s_task(task_content, days)
         result = self.service.get_s_undone_tasks()
 
-        self.assertEqual(len(result), 2)  # Laskee myös setupin
+        self.assertEqual(len(result), 2)
 
     def test_mark_s_undone_done_valid_id(self):
         self.service.login("Juho", "1919")
@@ -179,6 +178,15 @@ class TestHouseDiaryService(unittest.TestCase):
         result = self.service.get_s_undone_tasks()
 
         self.assertEqual(len(result), 2)
+
+    def test_get_scheduled_task_content_by_id_returns_correct_content(self):
+        self.service.login("Juho", "1919")
+        task_content = "Puhdista ilmalämpöpumput"
+        days = 20
+        self.service.create_s_task(task_content, days)
+
+        fetched_content = self.service.get_scheduled_task_content_by_id(2)
+        self.assertEqual(fetched_content, task_content)
 
     def tearDown(self):
         """Alustaa testitietokannan jokaisen testin jälkeen"""

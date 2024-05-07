@@ -240,3 +240,14 @@ class HouseDiaryService:
             pytz.utc).astimezone(helsinki_timezone)
         scheduled_time = current_time_in_helsinki + timedelta(days=days)
         return scheduled_time.strftime('%d.%m.%Y %H:%M')
+
+    def get_scheduled_task_content_by_id(self, s_id):
+        """Hakee ja palauttaa tietyn aikataulutetun tehtävän sisällön sen tunnisteen perusteella.
+
+        Args:
+            s_id (int): Tehtävän tunniste, jonka sisältö haetaan.
+
+        Returns:
+            str: Aikataulutetun tehtävän sisältö merkkijonona, tai None jos tehtävää ei löydy.
+        """
+        return self._scheduled_task_repository.get_content_by_id(s_id)

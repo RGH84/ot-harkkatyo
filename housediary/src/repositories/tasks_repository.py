@@ -277,3 +277,20 @@ class ScheduledTasksRepository:
         )
         result = cursor.fetchone()
         return result is not None
+
+    def get_content_by_id(self, s_id):
+        """Hakee tietyn aikataulutetun tehtävän sisällön ID:n perusteella.
+
+        Args:
+            s_id (int): Tehtävän yksilöivä tunniste.
+
+        Returns:
+            str: Haetun aikataulutetun tehtävän sisältö merkkijonona.
+        """
+        cursor = self._connection_scheduled.cursor()
+        cursor.execute(
+            "SELECT scheduled_task_content FROM scheduled_tasks_table WHERE id = ?",
+            (s_id,)
+        )
+        result = cursor.fetchone()
+        return result[0] if result else None

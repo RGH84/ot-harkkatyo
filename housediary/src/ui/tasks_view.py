@@ -144,8 +144,20 @@ class TaskManagerView:
 
     def _mark_s_undone_task_done(self):
         task_id = simpledialog.askstring(
-            "Merkkaa aikataulutettu tehtävä tehdyksi", "Merkkaa tehdyksi ID:")
+            "Merkkaa aikataulutettu tehtävä tehdyksi", "Anna tehtävän ID:")
         if task_id:
+            renew = messagebox.askyesno("Uusi tehtävä", "Haluatko uusia tämän tehtävän?")
+            if renew:
+                task_content = self._services.get_scheduled_task_content_by_id(task_id)
+                if task_content:
+                    new_days = simpledialog.askinteger("Uusi aikataulu", "Anna päivien määrä, milloin tehtävä tulisi olla valmis:")
+                    if new_days is not None:
+                        self._services.create_s_task(task_content, new_days)
+                        messagebox.showinfo("Onnistui", "Tehtävä on uusittu onnistuneesti.")
+                    else:
+                        messagebox.showinfo("Info", "Uutta aikataulua ei annettu.")
+                else:
+                    messagebox.showerror("Virhe", "Tehtävän sisältöä ei löytynyt.")
             success = self._services.mark_s_undone_done(task_id)
             if success:
                 messagebox.showinfo(
