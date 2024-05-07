@@ -7,6 +7,7 @@ connection.row_factory = sqlite3.Row
 test_connection = sqlite3.connect(TEST_DATABASE_FILE_PATH)
 test_connection.row_factory = sqlite3.Row
 
+
 def get_database_connection():
     return connection
 

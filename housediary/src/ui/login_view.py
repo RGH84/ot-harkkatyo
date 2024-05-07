@@ -10,6 +10,7 @@ class SignInView:
         _on_switch_to_create_user: Funktio, joka aktivoi käyttäjän luontinäkymän.
         _services: Palvelut, jotka tarjoavat kirjautumislogiikan.
     """
+
     def __init__(self, root, on_successful_login, on_switch_to_create_user, services):
         """Alustaa kirjautumisnäkymän ja määrittelee sen riippuvuudet.
 

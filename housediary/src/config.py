@@ -11,5 +11,7 @@ except FileNotFoundError:
 DATABASE_FILENAME = os.getenv("DATABASE_FILENAME") or "database.sqlite"
 DATABASE_FILE_PATH = os.path.join(dirname, "..", "data", DATABASE_FILENAME)
 
-TEST_DATABASE_FILENAME = os.getenv("TEST_DATABASE_FILENAME") or "test_database.sqlite"
-TEST_DATABASE_FILE_PATH = os.path.join(dirname, "..", "data", TEST_DATABASE_FILENAME)
+TEST_DATABASE_FILENAME = os.getenv(
+    "TEST_DATABASE_FILENAME") or "test_database.sqlite"
+TEST_DATABASE_FILE_PATH = os.path.join(
+    dirname, "..", "data", TEST_DATABASE_FILENAME)
