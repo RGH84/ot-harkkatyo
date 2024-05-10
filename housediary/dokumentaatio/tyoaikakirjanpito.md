@@ -28,4 +28,7 @@
 | 28.4. | 4    | graafisen käyttöliittymän toteutus|
 | 29.4. | 5    | pieniä korjauksia ja docstringit|
 | 30.4. | 5    | dokumentaation ajan tasalle saattaminen|
-| yht   | 78   | |
+|  6.5. | 4    | .env tiedoston lisääminen ja muutokset tiedostoihin|
+|  7.5. | 6    | automaattisten tehtävien "uusiminen" ja muuta pientä|
+| 10.5. | 2    | dokumentaation päivitys|
+| yht   | x   | |
