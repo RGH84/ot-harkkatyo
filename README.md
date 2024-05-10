@@ -21,6 +21,7 @@ Sovellukseen on juuri luotu ensimmäinen versio graafisesta käyttöliittymäst�
 - [Changelog](./housediary/dokumentaatio/changelog.md)
 - [Arkkitehtuurikuvaus](./housediary/dokumentaatio/arkkitehtuuri.md)
 - [Käyttöohje](./housediary/dokumentaatio/kayttoohje.md)
+- [Testausdokumentti](./housediary/dokumentaatio/testausdokumentti.md)
 
 ## Asennus
 
