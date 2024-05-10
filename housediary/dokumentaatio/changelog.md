@@ -34,5 +34,11 @@
 - Lisätty docstringejä
 - Korjattu tehtävien "tehty" ajan ilmaiseminen
 
+## Lopullinen palautus
+
+- Lisätty ominaisuus, kun aikataulutetun tehtävän merkitsee tehdyksi, kysyy ohjelma tehdäänkö tehtävä uudelleen
+- Lisätty tietokantojen nimeämisen konfiguroinnin mahdollisuus .env tiedoston kautta
+- Lisätty docstringejä
+- Dokumentaatiota päivitetty
 
 
