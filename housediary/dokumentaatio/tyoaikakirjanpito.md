@@ -30,5 +30,5 @@
 | 30.4. | 5    | dokumentaation ajan tasalle saattaminen|
 |  6.5. | 4    | .env tiedoston lisääminen ja muutokset tiedostoihin|
 |  7.5. | 6    | automaattisten tehtävien "uusiminen" ja muuta pientä|
-| 10.5. | 2    | dokumentaation päivitys|
+| 10.5. | 3    | dokumentaation päivitys ja Cubbli testaus|
 | yht   | x   | |
