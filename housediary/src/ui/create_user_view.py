@@ -1,4 +1,4 @@
-from tkinter import ttk, StringVar, constants
+from tkinter import ttk, StringVar, constants, messagebox
 
 
 class UserRegistrationView:
@@ -42,11 +42,11 @@ class UserRegistrationView:
         password = self._password_entry.get()
         if not self._services.check_length(username, password):
             self._display_error(
-                "Tarkista kenttien pituudet: Käyttäjänimi vähintään 3 \
-                    merkkiä ja salasana vähintään 4.")
+                "Tarkista kenttien pituudet: Käyttäjänimi vähintään 3 merkkiä ja salasana vähintään 4.")
             return
         try:
             if self._services.create_user(username, password):
+                messagebox.showinfo("Onnistui", "Käyttäjä luotu onnistuneesti.")
                 self._navigate_to_login()
             else:
                 self._display_error("Käyttäjänimi on jo olemassa.")
