@@ -36,4 +36,4 @@ Kaikki [määrittelydokumentissä](./vaatimusmaarittely.md#perusversion-tarjoama
 
 Tällä hetkellä sovellus ei tarjoa selkeitä virheilmoituksia seuraavissa tilanteissa:
 
-- Päivittyy
+- Sovelluksessa ei ole määritelty merkkimäärän ylärajaa. Sovellusta ei ole testattu pitkillä syötteillä. Oletuksena on, että käyttäjät eivät syötä poikkeuksellisen pitkiä tekstejä.
