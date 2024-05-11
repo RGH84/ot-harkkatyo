@@ -41,7 +41,7 @@ poetry run invoke start
 
 Sovellus avautuu suoraan kirjautumisnäkymään:
 
-**Kuva tulee lopullisesta versiosta**
+![](./kuvat/kirjautuminen.png)
 
 Kirjautua voit syöttämällä voimassa olevan käyttäjätunnuksen ja salasanan vastaaviin kenttiin ja klikkaamalla "Kirjaudu"-painiketta.
 
@@ -51,7 +51,7 @@ Voit siirtyä kirjautumisnäkymästä uuden käyttäjän luontinäkymään napsa
 
 Luo uusi käyttäjäprofiili täyttämällä vaaditut tiedot ja painamalla "Luo"-painiketta:
 
-**Kuva tulee lopullisesta versiosta**
+![](./kuvat/uusikayttaja.png)
 
 Onnistuneen rekisteröinnin jälkeen ohjelma palauttaa sinut kirjautumisnäkymään.
 
@@ -59,7 +59,7 @@ Onnistuneen rekisteröinnin jälkeen ohjelma palauttaa sinut kirjautumisnäkymä
 
 Kirjautumisen jälkeen pääset etusivulle, joka esittelee kaikki keskeneräiset tehtäväsi:
 
-**Kuva tulee lopullisesta versiosta**
+![](./kuvat/etusivu.png)
 
 Tässä näkymässä voit lisätä uusia tehtäviä, merkitä olemassaolevia tehtäviä valmiiksi sekä tarkastella suoritettuja tehtäviä.
 
@@ -67,5 +67,5 @@ Tässä näkymässä voit lisätä uusia tehtäviä, merkitä olemassaolevia teh
 
 Aikataulutetuille ja aikatauluttomille tehtäville on omat näkymänsä, joissa voit tarkastella valmiita tehtäviä ja poistaa niitä tarpeen mukaan.
 
-**Yksityiskohtaisemmat ohjeet sisällytetään lopulliseen versioon**
+![](./kuvat/tehdyt.png)
 
