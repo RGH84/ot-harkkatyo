@@ -8,37 +8,32 @@ Tämä sovellus on suunniteltu helpottamaan omakotitalojen ylläpitoa tarjoamall
 
 Alkuvaiheessa sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, joka pääsee hyödyntämään kaikkia perustoimintoja. Tulevaisuudessa käyttäjärooleja saatetaan laajentaa toteuttamalla _pääkäyttäjä_, jolle annetaan laajemmat oikeudet. 
 
-## Suunnitellut toiminnallisuudet 
+## Sovelluksen toiminnot 
 
 ### Ennen kirjautumista 
 
-- Käyttäjä voi luoda sovellukseen käyttäjätunnuksen ja salasanan ***"tehty"***
-	- Käyttäjätunnuksen tulee olla ainutlaatuinen ja sen pituuden on oltava vähintään 3 merkkiä ***"tehty"***
- 	- Salasanan pituuden tulee olla vähintään 4 merkkiä ***"tehty"***
-	- Järjestelmä ilmoittaa, jos käyttäjätunnus on jo käytössä, tai pituudet ovat väärin ***"tehty"***
-- Käyttäjä voi kirjautua sisään luotuaan onnistuneesti käyttäjätunnuksen ja salasanan ***"tehty"***
-	- Järjestelmä ilmoittaa, mikäli käyttäjätunnusta ei löydy tai salasana on virheellinen ***"tehty"***
+- Käyttäjä voi luoda sovellukseen käyttäjätunnuksen ja salasanan 
+	- Käyttäjätunnuksen tulee olla ainutlaatuinen ja sen pituuden on oltava vähintään 3 merkkiä 
+ 	- Salasanan pituuden tulee olla vähintään 4 merkkiä 
+	- Järjestelmä ilmoittaa, jos käyttäjätunnus on jo käytössä, tai pituudet ovat väärin 
+- Käyttäjä voi kirjautua sisään luotuaan onnistuneesti käyttäjätunnuksen ja salasanan 
+	- Järjestelmä ilmoittaa, mikäli käyttäjätunnusta ei löydy tai salasana on virheellinen 
 
 ### Kirjautumisen jälkeen 
 
-***"HUOM! Nyt kaikki ominaisuudet toimivat graafisella käyttöliittymällä, seuraavaksi parannetaan käyttökokemusta ja lisätän ominaisuuksia, jos aikaa jää. Ominaisuudet eroaa hivenen tästä vaatimusmäärittelystä, esim. uudet huoltotoimenpiteet luodaan ja merkataan tehdyksi ns. etusivulla ja poistaminen tapahtuu valmiiden kautta."***
+- Käyttäjä tulee etusivulle, jossa on linkit tehdyt _aikatauluttomat_ ja _aikataulutetut tehtävät_ sivuille sekä molempien sivujen tekemättömät huoltotoimenpiteet listattuna
 
-- Käyttäjä tulee etusivulle, jossa on linkit _Huoltotoimenpiteet_ ja _Aikataulutetut huoltotoimenpiteet_ sivuille sekä molempien sivujen tekemättömät huoltotoimenpiteet listattuna ***"tehty"***
-- _Huoltotoimenpiteet_ sivulla: 
-	- Näet tekemäsi huoltotoimenpiteet ***"tehty"***
- 	- Pystyt lisäämään tekemäsi huoltotoimenpiteen, joka tulee näkyviin sivulle ***"tehty"***
-	- Pystyt lisäämään tekemättömän huoltotoimenpiteen, joka tulee näkyviin etusivulle ***"tehty"***
-- _Aikataulutetut huoltotoimenpiteet_ sivulla: 
-	- Näet tekemäsi aikataulutetut huoltotoimenpiteet ***"tehty"***
- 	- Pystyt lisäämään tekemäsi huoltotoimenpiteen, joka tulee näkyviin sivulle  ***"tehty"***
-	- Pystyt lisäämään tekemättömän aikataulutetun huoltotoimenpiteen, joka tulee näkyviin etusivulle ***"tehty"***
-	- Aikataulutetussa huoltotoimenpiteessä tulee merkitä aika, mihin mennessä se pitäisi tehdä ***"tehty"***
-- Etusivulta voi merkitä huoltotoimenpiteitä tehdyksi, jolloin ne siirtyvät näkyviin omille sivuillensa ***"tehty"***
-
+- Etusivulla voit:
+  	- Lisätä uusia huoltotoimenpiteitä, jotka tulevat näkyviin etusivulle
+  	- Merkitä huoltotoimenpiteitä tehdyksi, jolloin ne siirtyvät näkyviin omille sivuillensa
+  	- Uusia aikataulutettuja tehtäviä
+- Tehdyt sivuilla voit: 
+	- Tarkastella tekemiäsi huoltotoimenpiteitä
+ 	- Poistaa jo tehtyjä huoltotoimenpiteitä
+	
 ## Jatkokehitysideoita 
 
-- Huoltotoimenpiteiden muokkaaminen ja poistaminen ***"poistaminen toteutettu"***
-- Aikataulutettujen huoltotoimenpiteiden automatisointi, sovellus osaa ehdottaa uutta aikaa seuraavalle huollolle, merkittäessä aikataulutettua huoltotoimenpidettä valmiiksi
-- Toimenpiteet voi jakaa omiin ryhmiin, esim. IV- kone, ilmalämpöpumput, ulkotyöt, nuohous ym.
-- Muutakin toiminnalisuutta voi tulla, jos aikaa jää
+- Huoltotoimenpiteiden muokkaaminen
+- Toimenpiteet voi jakaa omiin ryhmiin, esim. IV- kone, ilmalämpöpumput, ulkotyöt, nuohous ym
+- Käyttöliittymän parannus, tai muuttaminen esim. web-sovellukseksi, jolloin sitä voisi käyttää missä vain
 
