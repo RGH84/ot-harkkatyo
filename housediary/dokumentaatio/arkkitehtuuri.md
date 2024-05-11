@@ -66,11 +66,27 @@ Sovelluksen rakenteellisia suhteita kuvaava luokka- ja pakkauskaavio esittelee, 
 
 ![Pakkausrakenne ja luokat](./kuvat/pakkauskaaviotoka.png)
 
+## Tietojen pysyväistallennus
+
+Pakkauksen _repositories_ luokat `UnscheduledTaskRepository`, `ScheduledTaskRepository` ja `UserRepository` huolehtivat tietojen tallettamisesta. Nämä luokat tallentavat tietoa SQLite-tietokantaan.
+
+### Tiedostot
+
+Sovellus tallettaa käyttäjien ja tehtävien tiedot samaan tietokantaan.
+
+Sovelluksen juureen sijoitettu [konfiguraatiotiedosto](./kayttoohje.md#konfiguraatiotiedosto) [.env](https://github.com/RGH84/ot-harkkatyo/blob/master/housediary/.env) määrittelee tiedostojen nimet.
+
+Käyttäjät tallennetaan SQLite-tietokannan tauluun `users`, aikatauluttomat tehtävät tauluun `unscheduled_tasks_table` ja aikataululliset tehtävät tauluun `scheduled_tasks_table`. Talut alustetaan [initialize_database.py](https://github.com/RGH84/ot-harkkatyo/blob/master/housediary/src/initialize_database.py)-tiedoston kautta.
+
+Testeille käytetään omaa tietokantaa. Testitietokanta käyttää myös [konfiguraatiotiedosto](./kayttoohje.md#konfiguraatiotiedosto) [.env](https://github.com/RGH84/ot-harkkatyo/blob/master/housediary/.env), jolla voi määritellä testitietokannan nimen. Testitietokanta alustetaan [test_initialize_database.py](https://github.com/RGH84/ot-harkkatyo/blob/master/housediary/src/test_initialize_database.py)-tiedoston kautta.
+
+Molemmat tietokannat käyttävät yhteistä [dadabase_operation.py](https://github.com/RGH84/ot-harkkatyo/blob/master/housediary/src/database_operations.py)-tiedostoa alustamiseen, jonka avulla taulut pysyvät samana molemmissa tietokannoissa.
+
 ## Päätoiminnalisuudet
 
 ### Kirjautuminen
 
-Käyttäjä on jo luonut tunnuksen ja salasanan. Käyttäjä antaa komennon 3. Sovellus etenee tästä seuraavanlaisesti:
+Käyttäjä on jo luonut tunnuksen ja salasanan. Käyttäjä kirjoitaa oikean tunnuksen ja salasanan syötekenttiin, sovellus etenee tästä seuraavanlaisesti:
 
 ```mermaid
 sequenceDiagram
@@ -78,18 +94,18 @@ sequenceDiagram
   participant UI
   participant HouseDiaryService
   participant UserRepository
-  User->>UI: command = "3"
+  User->>UI: click "Kirjaudu" button
   UI->>HouseDiaryService: login("Juho", "1919")
   HouseDiaryService->>UserRepository: find_by_username("Juho")
   UserRepository-->>HouseDiaryService: user
   HouseDiaryService-->>UI: user
-  UI->UI: _login()
+  UI->UI: _switch_to_task_management_view()
 ```
 Käyttäjä kirjoittaa käyttäjätunnuksensa ja salasanansa, minkä jälkeen käyttöliittymä pyytää HouseDiaryService-palvelulta kirjautumista. Tämä palvelu tarkistaa UserRepositoryn avulla, ovatko annetut tunnus ja salasana oikein. Mikäli kirjautuminen onnistuu, HouseDiaryService välittää käyttäjätiedot takaisin käyttöliittymään, joka päivittyy näyttämään kirjautumisen jälkeisen käyttöliittymän.
 
 ### Aikatauluttoman tehtävän luominen
 
-Kun käyttäjä on kirjautunut sisään ja valinnut komennon 1, sovellus toimii seuraavasti:
+Kun käyttäjä on kirjautunut sisään ja klikkaa Luo aikatauluttomaton tehtävä painiketta, sovellus toimii seuraavasti:
 
 ```mermaid
 sequenceDiagram
@@ -98,12 +114,23 @@ sequenceDiagram
   participant HouseDiaryService
   participant UnscheduledTaskRepository
   participant UnscheduledTask
-  User->>UI: command = "1"
+  User->>UI: click "Luo tehtävä painiketta" button
   UI->>HouseDiaryService: create_u_task("Maalaa seinät")
   HouseDiaryService->>UnscheduledTask: UnscheduledTask("Maalaa seinät", Juho)
   HouseDiaryService->>UnscheduledTaskRepository: create_new_u_task(u_task)
   UnscheduledTaskRepository-->>HouseDiaryService: u_task
   HouseDiaryService-->>UI: u_task 
-  UI->>UI: Tehtävä luotu onnistuneesti
+  UI->>UI: _reload_task_list()
 ```
-UnscheduledTask saa myös muita tietoja, kuten luontiajan, muita tietoja ei tässä yhteydessä käsitellä tarkemmin. Kun tehtävä on onnistuneesti luotu, käyttöliittymä ilmoittaa tästä käyttäjälle ja päivittää tehtävälistan, kun käyttäjä antaa asianmukaisen komennon.
+UnscheduledTask saa myös muita tietoja, kuten luontiajan, muita tietoja ei tässä yhteydessä käsitellä tarkemmin. Kun tehtävä on onnistuneesti luotu, käyttöliittymä ilmoittaa tästä käyttäjälle ja päivittää tehtävälistan.
+
+### Muut toiminnallisuudet
+
+Kaikissa sovelluksen toiminnallisuuksissa noudatetaan samaa periaatetta: käyttöliittymän tapahtumakäsittelijä kutsuu sopivaa sovelluslogiikan metodia, joka päivittää tehtävien tai kirjautuneen käyttäjän tilaa. Kun ohjaus palaa käyttöliittymään, päivitetään tarvittaessa tehtävälista ja aktiivinen näkymä.
+
+### Ohjelman rakenteeseen jääneet heikkoudet
+
+- Käyttöliittymä voisi parantaa käytettävyyden ja selkeyden osalta
+- Liian pitkiä syötteitä ei valvota 
+
+
