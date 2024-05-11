@@ -46,7 +46,8 @@ class UserRegistrationView:
             return
         try:
             if self._services.create_user(username, password):
-                messagebox.showinfo("Onnistui", "Käyttäjä luotu onnistuneesti.")
+                messagebox.showinfo(
+                    "Onnistui", "Käyttäjä luotu onnistuneesti.")
                 self._navigate_to_login()
             else:
                 self._display_error("Käyttäjänimi on jo olemassa.")

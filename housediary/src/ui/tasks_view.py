@@ -114,7 +114,8 @@ class TaskManagerView:
     def _create_new_task(self):
         """
         Luo uuden aikatauluttoman tehtävän syötteen perusteella.
-        Ottaa käyttäjän syöttämän tehtävän ja luo sen, mikäli syöte ei ole tyhjä eikä pelkkä placeholder.
+        Ottaa käyttäjän syöttämän tehtävän ja luo sen, mikäli syöte ei
+        ole tyhjä eikä pelkkä placeholder.
         """
         new_task = self._task_entry.get().strip()
         if new_task and new_task != 'Kirjoita tehtävä:':
@@ -129,7 +130,8 @@ class TaskManagerView:
     def _create_new_scheduled(self):
         """
         Luo uuden aikataulutetun tehtävän syötteen ja päivämäärän perusteella.
-        Ottaa käyttäjän syöttämät tiedot ja luo uuden aikataulutetun tehtävän, jos syötteet ovat kelvollisia.
+        Ottaa käyttäjän syöttämät tiedot ja luo uuden aikataulutetun tehtävän,
+        jos syötteet ovat kelvollisia.
         """
         scheduled_task = self._scheduled_task_entry.get().strip()
         days = self._days_entry.get().strip()
@@ -192,7 +194,8 @@ class TaskManagerView:
     def _mark_u_undone_task_done(self):
         """
         Merkitsee aikatauluttoman tehtävän tehdyksi annetun ID:n perusteella.
-        Kysyy käyttäjältä tehtävän ID:n ja merkitsee tehtävän tehdyksi, jos ID on kelvollinen. Näyttää virheilmoituksen, jos ID on kelvoton.
+        Kysyy käyttäjältä tehtävän ID:n ja merkitsee tehtävän tehdyksi, jos ID on kelvollinen.
+        Näyttää virheilmoituksen, jos ID on kelvoton.
         """
         task_id = simpledialog.askstring(
             "Merkkaa tehdyksi", "Anna tehtävän ID:")
@@ -211,35 +214,38 @@ class TaskManagerView:
     def _mark_s_undone_task_done(self):
         """
         Merkitsee aikataulutetun tehtävän tehdyksi ja kysyy, haluaako käyttäjä uusia tehtävän.
-        Jos käyttäjä päättää uusia tehtävän, pyydetään uusi aikataulu ja luodaan tehtävä uudelleen annetulla aikataululla.
-        Näyttää virheilmoituksen, jos ID on kelvoton tai tehtävän sisältöä ei löydy.
+        Jos käyttäjä päättää uusia tehtävän, pyydetään uusi aikataulu ja luodaan tehtävä uudelleen
+        annetulla aikataululla. Näyttää virheilmoituksen, jos ID on kelvoton tai
+        tehtävän sisältöä ei löydy.
         """
         task_id = simpledialog.askstring(
             "Merkkaa aikataulutettu tehtävä tehdyksi", "Anna tehtävän ID:")
         if task_id:
-            renew = messagebox.askyesno(
-                "Uusi tehtävä", "Haluatko uusia tämän tehtävän?")
-            if renew:
-                task_content = self._services.get_scheduled_task_content_by_id(
-                    task_id)
-                if task_content:
-                    new_days = simpledialog.askinteger(
-                        "Uusi aikataulu", "Anna päivien määrä, milloin tehtävä tulisi olla valmis:")
-                    if new_days is not None:
-                        self._services.create_s_task(task_content, new_days)
-                        messagebox.showinfo(
-                            "Onnistui", "Tehtävä on uusittu onnistuneesti.")
-                    else:
-                        messagebox.showinfo(
-                            "Info", "Uutta aikataulua ei annettu.")
-                else:
-                    messagebox.showerror(
-                        "Virhe", "Tehtävän sisältöä ei löytynyt.")
             success = self._services.mark_s_undone_done(task_id)
             if success:
+                self._reload_scheduled_task_list()
                 messagebox.showinfo(
                     "Onnistui", "Tehtävä merkitty tehdyksi onnistuneesti.")
-                self._reload_scheduled_task_list()
+                renew = messagebox.askyesno(
+                    "Uusi tehtävä", "Haluatko uusia tämän tehtävän?")
+                if renew:
+                    task_content = self._services.get_scheduled_task_content_by_id(
+                        task_id)
+                    if task_content:
+                        new_days = simpledialog.askinteger(
+                            "Uusi aikataulu", "Anna päivien määrä, milloin tehtävä tulisi olla valmis:")
+                        if new_days is not None:
+                            self._services.create_s_task(
+                                task_content, new_days)
+                            self._reload_scheduled_task_list()
+                            messagebox.showinfo(
+                                "Onnistui", "Tehtävä on uusittu onnistuneesti.")
+                        else:
+                            messagebox.showinfo(
+                                "Info", "Uutta aikataulua ei annettu.")
+                    else:
+                        messagebox.showerror(
+                            "Virhe", "Tehtävän sisältöä ei löytynyt.")
             else:
                 messagebox.showerror(
                     "Virhe", "Tehtävän merkitseminen tehdyksi epäonnistui.")
@@ -260,7 +266,8 @@ class TaskManagerView:
 
     def _initialize(self):
         """
-        Alustaa kaikki näkymän komponentit. Sisältää pääkehyksen rakentamisen ja ala- ja yläosien alustamisen.
+        Alustaa kaikki näkymän komponentit. Sisältää pääkehyksen rakentamisen
+        ja ala- ja yläosien alustamisen.
         """
         self._frame = ttk.Frame(master=self._root)
         self._initialize_header()
