@@ -39,6 +39,7 @@
 - Lisätty ominaisuus, kun aikataulutetun tehtävän merkitsee tehdyksi, kysyy ohjelma tehdäänkö tehtävä uudelleen
 - Lisätty tietokantojen nimeämisen konfiguroinnin mahdollisuus .env tiedoston kautta
 - Lisätty docstringejä
-- Dokumentaatiota päivitetty
+- Dokumentaatio päivitetty lopullista palautusta vastaavasksi
+- loppupalautus GitHub-release
 
 
