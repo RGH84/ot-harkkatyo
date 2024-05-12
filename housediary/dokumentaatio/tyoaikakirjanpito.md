@@ -31,5 +31,6 @@
 |  6.5. | 4    | .env tiedoston lisääminen ja muutokset tiedostoihin|
 |  7.5. | 6    | automaattisten tehtävien "uusiminen" ja muuta pientä|
 | 10.5. | 3    | dokumentaation päivitys ja Cubbli testaus|
-| 10.5. | x    | pieniä korjauksia ja dokumentaation päivitystä|
-| yht   | x   | |
+| 11.5. | 5    | pieniä korjauksia ja dokumentaation päivitystä|
+| 12.5. | 2    | dokumentaation lopullinen päivitys ha github-release|
+| yht   | 98   | |
