@@ -32,5 +32,5 @@
 |  7.5. | 6    | automaattisten tehtävien "uusiminen" ja muuta pientä|
 | 10.5. | 3    | dokumentaation päivitys ja Cubbli testaus|
 | 11.5. | 5    | pieniä korjauksia ja dokumentaation päivitystä|
-| 12.5. | 2    | dokumentaation lopullinen päivitys ha github-release|
+| 12.5. | 2    | dokumentaation lopullinen päivitys ja GitHub-release|
 | yht   | 98   | |
