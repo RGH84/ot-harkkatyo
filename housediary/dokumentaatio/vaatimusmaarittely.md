@@ -6,7 +6,7 @@ Tämä sovellus on suunniteltu helpottamaan omakotitalojen ylläpitoa tarjoamall
 
 ## Käyttäjät 
 
-Alkuvaiheessa sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, joka pääsee hyödyntämään kaikkia perustoimintoja. Tulevaisuudessa käyttäjärooleja saatetaan laajentaa toteuttamalla _pääkäyttäjä_, jolle annetaan laajemmat oikeudet. 
+Tällä hetkellä sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, joka pääsee hyödyntämään kaikkia perustoimintoja. Tulevaisuudessa käyttäjärooleja saatetaan laajentaa toteuttamalla _pääkäyttäjä_, jolle annetaan laajemmat oikeudet. 
 
 ## Sovelluksen toiminnot 
 
@@ -36,5 +36,5 @@ Alkuvaiheessa sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, 
 - Käyttöliittymän käyttökokemuksen ja visuaalisuuden parannus
 - Huoltotoimenpiteiden muokkaaminen
 - Toimenpiteet voi jakaa omiin ryhmiin, esim. IV- kone, ilmalämpöpumput, ulkotyöt, nuohous ym
-- Käyttöliittymän muuttaminen esim. web-sovellukseksi, jolloin sitä voisi käyttää missä vain
+- Käyttöliittymän muuttaminen esimerkiksi web-sovellukseksi mahdollistaisi sen käytön missä tahansa. Aion todennäköisesti jatkaa kehitystä tähän suuntaan omalla ajallani.
 
