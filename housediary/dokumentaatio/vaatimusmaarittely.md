@@ -33,7 +33,8 @@ Alkuvaiheessa sovellus tukee yhtä käyttäjätyyppiä, _normaali käyttäjä_, 
 	
 ## Jatkokehitysideoita 
 
+- Käyttöliittymän käyttökokemuksen ja visuaalisuuden parannus
 - Huoltotoimenpiteiden muokkaaminen
 - Toimenpiteet voi jakaa omiin ryhmiin, esim. IV- kone, ilmalämpöpumput, ulkotyöt, nuohous ym
-- Käyttöliittymän parannus, tai muuttaminen esim. web-sovellukseksi, jolloin sitä voisi käyttää missä vain
+- Käyttöliittymän muuttaminen esim. web-sovellukseksi, jolloin sitä voisi käyttää missä vain
 
