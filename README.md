@@ -8,12 +8,6 @@ Tämä sovellus on suunniteltu helpottamaan omakotitalojen ylläpitoa tarjoamall
 
 Sovelluksen Python-version vähimmäisvaatimus on `3.8`. Sovelluksen toiminta on testattu Ubuntu 22.04.4 LTS ja Cubbli Linux järjestelmillä.
 
-## Muita huomioita
-
-Sovellus on vielä kehitysvaiheessa. Tällä hetkellä sovelluksessa voi luoda käyttäjän, tarkastella muita käyttäjiä ja kirjautua sisään/ulos. Lisäksi sovelluksella voi luoda aikatauluttomia/aikataulutettuja tehtäviä, katsella omia tehtyjä/tekemättömiä tehtäviä, merkitä valmiiksi ja poistaa niitä.
-
-Sovellukseen on juuri luotu ensimmäinen versio graafisesta käyttöliittymästä. Käyttöliittymää ja ominaisuuksia parannellaan vielä viimeisellä viikolla.
-
 ## Dokumentaatio
 
 - [Vaatimusmäärittely](./housediary/dokumentaatio/vaatimusmaarittely.md)
